@@ -1,3 +1,5 @@
-HomeSobolev/HomeSobolev/secret.py
-HomeSobolev/venv
-HomeSobolev/.idea
+HomeSobolev/secret.py
+venv
+.idea
+*.pyc
+*/__pycache/
