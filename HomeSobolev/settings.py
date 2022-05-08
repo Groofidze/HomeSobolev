@@ -1,3 +1,5 @@
+import os
+
 from .secret import *
 from pathlib import Path
 
@@ -95,7 +97,7 @@ USE_TZ = True
 
 # Статические файлы
 STATIC_URL = "/static/"
-STATIC_ROOT = [BASE_DIR / "collect_static"]
+STATIC_ROOT = os.path.join(BASE_DIR, "collect")
 
 # Медиа файлы
 MEDIA_URL = "/media/"
