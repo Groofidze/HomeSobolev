@@ -7,7 +7,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Режим разработки
-DEBUG = True
+DEBUG = False
 
 # Подключенные хосты
 ALLOWED_HOSTS = ["*"]
