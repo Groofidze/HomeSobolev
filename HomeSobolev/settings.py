@@ -97,7 +97,7 @@ USE_TZ = True
 
 # Статические файлы
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "collect")
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Медиа файлы
 MEDIA_URL = "/media/"
