@@ -95,6 +95,7 @@ USE_TZ = True
 
 # Статические файлы
 STATIC_URL = "/static/"
+STATIC_ROOT = [BASE_DIR / "collect_static"]
 
 # Медиа файлы
 MEDIA_URL = "/media/"
