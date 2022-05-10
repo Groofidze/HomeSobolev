@@ -1,5 +1,3 @@
-from HomeSobolev.settings.base import BASE_DIR
-
 # Режим разработки
 DEBUG = True
 
