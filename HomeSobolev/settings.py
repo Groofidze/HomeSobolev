@@ -1,5 +1,4 @@
 import os
-
 from .secret import *
 from pathlib import Path
 
@@ -21,7 +20,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
+
     # Приложение проекта
     "books",
 ]
@@ -96,8 +95,11 @@ USE_L10N = True
 USE_TZ = True
 
 # Статические файлы
-STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_URL = "static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+STATIC_ROOT = os.path.join(BASE_DIR, "collect_static")
 
 # Медиа файлы
 MEDIA_URL = "/media/"
