@@ -15,14 +15,11 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="{% url 'books:index' %}">Sobolev Books</a>
-    <div  id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="{% url 'admin:index' %}">Кабинет администратора</a>
         </li>
       </ul>
-
-    </div>
   </div>
 </nav>
 </header>
@@ -32,7 +29,7 @@
     {% for book in books %}
       <div class="col">
         <div class="card">
-          <img src="{% static 'default/img/book.jpeg' %}" class="card-img-top" alt="book">
+          <img src="{% static 'default/img/book.jpg' %}" class="card-img-top" alt="book">
           <div class="card-body">
             <h5 class="card-title">{{ book.name }}</h5>
             <p class="card-text">{{ book.price }}</p>
