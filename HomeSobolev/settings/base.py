@@ -3,13 +3,7 @@ from .secret import *
 from pathlib import Path
 
 # Путь проекта
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-# Режим разработки
-DEBUG = False
-
-# Подключенные хосты
-ALLOWED_HOSTS = ["*"]
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Активные приложения
 INSTALLED_APPS = [
@@ -95,12 +89,10 @@ USE_L10N = True
 USE_TZ = True
 
 # Статические файлы
-STATIC_URL = "static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "collect_static")
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    BASE_DIR / "collect_static",
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, "collect_static")
 
 # Медиа файлы
 MEDIA_URL = "/media/"
