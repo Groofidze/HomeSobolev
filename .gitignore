@@ -3,4 +3,5 @@ venv
 .idea
 *.pyc
 */__pycache/
-/static
+!/static
+*/static

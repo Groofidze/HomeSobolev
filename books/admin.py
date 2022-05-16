@@ -8,9 +8,18 @@ class BooksAdmin(admin.ModelAdmin):
         'name',
     )
     fields = [
+        'author',
         'name',
         'chapter',
         'price',
+        'management',
+        'from_made_in',
+        'made_in',
+        'year',
+        'status',
+        'date_active',
+        'image',
+        'comment',
     ]
     ordering = [
         'name',
